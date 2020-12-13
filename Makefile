@@ -5,7 +5,7 @@ datadir = /share
 all: goverlay
 
 goverlay: *.pas *.lfm *.lrs goverlay.lpi goverlay.lpr goverlay.res goverlay.ico
-	lazbuild -B goverlay.lpi --bm=Release $(LAZBUILDOPTS)
+	lazbuild -B goverlay.lpi --pcp=/tmp/.lazarus --bm=Release $(LAZBUILDOPTS)
 
 clean:
 	rm -f goverlay
